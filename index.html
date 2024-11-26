@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        display: grid;
+        grid-template-areas:
+          "header header header"
+          "nav nav nav"
+          "aside main main"
+          "aside section section"
+          "footer footer footer";
+      }
+
+      header,
+      nav {
+        color: white;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      header {
+        background: rgb(12, 20, 84);
+        grid-area: header;
+        padding: 1rem 0;
+      }
+
+      nav {
+        background: rgb(186, 191, 223);
+        color: black;
+        grid-area: nav;
+        padding: 1rem 0;
+      }
+
+      main {
+        text-align: center;
+        padding: 2rem 0;
+        grid-area: main;
+        height: 400px;
+        border-bottom: 1px solid black;
+      }
+
+      section {
+        grid-area: section;
+        text-align: center;
+        padding: 1rem 0;
+        height: 220px;
+      }
+
+      aside {
+        grid-area: aside;
+        padding: 1rem;
+        background: rgb(12, 20, 84);
+        color: white;
+      }
+
+      aside h3{
+        margin-bottom: 1rem;
+      }
+
+      aside ul{
+        margin-left: 1rem;
+      }
+
+      aside li{
+        padding:.5rem 0;
+      }
+
+      footer{
+        grid-area: footer;
+        background: rgb(186, 191, 223);
+        padding: 1rem 0;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header><h1>Company Logo and Site Title</h1></header>
+    <nav>Home | About | Services | Contact</nav>
+    <main>
+      <h2>Welcome to our website! Here you can find a variety of resources and
+        services.</h2>
+
+    </main>
+
+    <section>
+      <h3>Featured</h3>
+      <p>
+        The Future of Web Design This article discusses the latest trends and
+        technologies in web design, including AI and responsive design.
+      </p>
+    </section>
+
+    <aside>
+      <h3>Upcoming Events and Updates</h3>
+      <ul>
+        <li>Webinar on Modern Web Development</li>
+        <li>Annual Conference - Registration Open</li>
+      </ul>
+    </aside>
+
+    <footer>Contact Us: info@company.com | Phone: +1234567890</footer>
+  </body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fix the HTML Code</title>
+<script src="script.js" defer></script>
+<link rel="stylesheet" href="style.css">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    background-color: #f4f4f4;
+  }
+
+  .question {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .code-snippet {
+    background-color: #333;
+    color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    width: fit-content;
+  }
+
+  .code-line {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+  }
+
+  .select {
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 16px;
+    background-color: #222;
+    color: #f4f4f4;
+    border: 1px solid #555;
+    border-radius: 4px;
+  }
+
+  .select option {
+    background-color: #333;
+    color: #f4f4f4;
+  }
+</style>
+</head>
+<body>
+
+<div class="question">
+  Correct the HTML code by choosing the correct attributes and tag names.
+</div>
+
+<div class="code-snippet">
+  <div class="code-line">
+    &lt;html <select class="select">
+      <option ></option>
+      <option value="lang-">lang-</option>
+      <option value="lang">lang</option>
+      <option value="language">language</option>
+    </select>="en"&gt;
+  </div>
+
+  <div class="code-line">
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;
+  </div>
+
+  <div class="code-line">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta <select class="select">
+     <option></option>
+      <option value="chartset">chartset</option>
+      <option value="char">char</option>
+      <option value="charset">charset</option>
+    </select>="UTF-8"&gt;
+  </div>
+
+  <div class="code-line">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta <select class="select">
+      <option></option>
+      <option value="name">name</option>
+      <option value="id">id</option>
+      <option value="title">title</option>
+    </select>="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  </div>
+
+  <div class="code-line">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" <select class="select">
+      <option></option>
+      <option value="src">src</option>
+      <option value="source">source</option>
+      <option value="link">link</option>
+      <option value="href">href</option>
+    </select>="styles.css"&gt;
+  </div>
+
+  <div class="code-line">
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;
+  </div>
+
+  <div class="code-line">
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;
+  </div>
+
+  <div class="code-line">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1 <select class="select">
+      <option></option>
+      <option value="#">#</option>
+      <option value="class">class</option>
+      <option value="heading">heading</option>
+      <option value="id">id</option>
+    </select>="main-heading"&gt;Welcome to My Website&lt;/h1&gt;
+  </div>
+
+  <div class="code-line">
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;
+  </div>
+
+  <div class="code-line">
+    &lt;/html&gt;
+  </div>
+</div>
+<div class="buttons">
+  <button id="prevBtn">Prev</button>
+  <button id="nextBtn">Next</button>
+</div>
+</body>
+</html>

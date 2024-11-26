@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML Video Tag Dropdown</title>
+<script src="script.js" defer></script>
+<link rel="stylesheet" href="style.css">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    background-color: #f4f4f4;
+  }
+
+  .question {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .code-snippet {
+    background-color: #333;
+    color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    width: fit-content;
+  }
+
+  .code-line {
+    display: flex;
+    align-items: center;
+    margin: .5rem 0;
+  }
+
+  .tag-select {
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 16px;
+    background-color: #222;
+    color: #f4f4f4;
+    border: 1px solid #555;
+    border-radius: 4px;
+  }
+
+  .tag-select option {
+    background-color: #333;
+    color: #f4f4f4;
+  }
+</style>
+</head>
+<body>
+
+<div class="question">
+  Choose the correct tags and attributes to create a video element with a source and controls.
+</div>
+
+<div class="code-snippet">
+  <div class="code-line">
+    &lt;<select class="tag-select">
+      <option></option>
+      <option value="img">img</option>
+      <option value="source">source</option>
+      <option value="audio">audio</option>
+      <option value="video">video</option>  
+    </select>  
+    <select class="tag-select">
+      <option></option>
+      <option value="source">src="sample.mp4" type="video/mp4"</option>
+      <option value="controls">controls</option>
+      <option value="video">video</option>  
+    </select> 
+    &gt;
+  </div>
+
+  <div class="code-line">
+    &nbsp;&nbsp;&lt;<select class="tag-select">
+      <option></option>
+      <option value="img">img</option>
+      <option value="source">source</option>
+      <option value="audio">audio</option>
+      <option value="video">video</option>      
+    </select>
+    <select class="tag-select">
+      <option></option>
+      <option value="source">src="sample.mp4" type="video/mp4"</option>
+      <option value="controls">controls</option>
+      <option value="video">video</option> 
+    </select>&gt;
+  </div>
+
+  <div class="code-line">
+    &lt;/<select class="tag-select">
+      <option></option>
+      <option value="img">img</option>
+      <option value="source">source</option>
+      <option value="audio">audio</option>
+      <option value="video">video</option>  
+    </select>&gt;
+  </div>
+</div>
+
+<div class="buttons">
+  <button id="prevBtn">Prev</button>
+  <button id="nextBtn">Next</button>
+</div>
+
+</body>
+</html>

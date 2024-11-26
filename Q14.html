@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Error</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        padding: 20px;
+      }
+
+      .container {
+        width: 60%;
+        margin: 0 auto;
+      }
+
+      .question {
+        font-size: 18px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .code-snippet {
+        background-color: #333;
+        color: #f8f8f2;
+        padding: 10px;
+        border-radius: 8px;
+        font-family: "Courier New", Courier, monospace;
+        width: fit-content;
+        margin: 20px auto 0;
+        text-align: start;
+      }
+
+      .code-line {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 8px;
+      }
+
+      select {
+        padding: 5px;
+        margin: 0 auto 10px;
+        width: fit-content;
+        font-size: 16px;
+      }
+
+      label {
+        font-weight: bold;
+      }
+
+      .dropdown {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="question">
+        <p>
+          You are analyzing the form that sends multi-line comment to another
+          page on the internet. The following is the form markup.
+        </p>
+        <div class="code-snippet">
+          <div class="code-line">
+            &lt;form action="http://www.contoso.com/receivecommets.asp"
+            method="post"&gt;<br />
+          </div>
+          <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;Comments:<br /></div>
+          <div class="code-line">
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;textarea
+            id="comments"&gt;&lt;/textarea&gt;<br />
+          </div>
+          <div class="code-line">
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="submit"
+            value="Submit"&gt;<br />
+          </div>
+          <div class="code-line">&lt;/form&gt;</div>
+        </div>
+
+        <p>No data is sent when the form is submitted</p>
+        <p>
+          Which of the following options will solve this problem so that the
+          data in the textbox is submitted.
+        </p>
+      </div>
+
+      <div class="dropdown">
+        <select>
+          <option value=""></option>
+          <option value="option1">
+            Replace the textarea element with an input element
+          </option>
+          <option value="option2">
+            Set the name attribute of the textarea element
+          </option>
+          <option value="option3">
+            Change the value of the method attribute to get
+          </option>
+          <option value="option4">
+            Set the id attribute of the form element
+          </option>
+        </select>
+      </div>
+    </div>
+    <div class="buttons">
+      <button id="prevBtn">Prev</button>
+      <button id="nextBtn">Next</button>
+    </div>
+  </body>
+</html>

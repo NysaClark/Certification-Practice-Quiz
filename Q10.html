@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML Table Elements Dropdown</title>
+<script src="script.js" defer></script>
+<link rel="stylesheet" href="style.css">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    background-color: #f4f4f4;
+  }
+
+  .question {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .code-snippet {
+    background-color: #333;
+    color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    width: fit-content;
+  }
+
+  .code-line {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+  }
+
+  .select {
+    margin: 0 10px;
+    padding: 5px;
+    font-size: 16px;
+    background-color: #222;
+    color: #f4f4f4;
+    border: 1px solid #555;
+    border-radius: 4px;
+  }
+
+  .select option {
+    background-color: #333;
+    color: #f4f4f4;
+  }
+</style>
+</head>
+<body>
+
+<div class="question">
+  Complete the HTML table structure by selecting the correct table elements.
+</div>
+
+<div class="code-snippet">
+  <div class="code-line">
+    &lt;<select class="select">
+      <option value=""></option>
+      <option value="div">div</option>
+      <option value="tbody">tbody</option>
+      <option value="table">table</option>
+      <option value="body">body</option>
+    </select>&gt;
+  </div>
+
+  <div class="code-line">
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;<select class="select">
+      <option value=""></option>
+      <option value="thead">thead</option>
+      <option value="tfoot">tfoot</option>
+      <option value="tbody">tbody</option>
+      <option value="row">row</option>
+    </select>&gt;
+  </div>
+
+  <div class="code-line">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<select class="select">
+      <option value=""></option>
+      <option value="tr">tr</option>
+      <option value="td">td</option>
+      <option value="th">th</option>
+    </select>&gt;
+  </div>
+
+  <div class="code-line">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<select class="select">
+      <option value=""></option>
+      <option value="tr">tr</option>
+      <option value="td">td</option>
+      <option value="th">th</option>
+    </select> scope="col"&gt;Header 1&lt;/<select class="select">
+      <option value=""></option>
+      <option value="tr">tr</option>
+      <option value="td">td</option>
+      <option value="th">th</option>
+    </select>&gt;
+  </div>
+
+  <div class="code-line">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<select class="select">
+      <option value=""></option>
+      <option value="tr">tr</option>
+      <option value="td">td</option>
+      <option value="th">th</option>
+    </select> scope="col"&gt;Header 2&lt;/<select class="select">
+      <option value=""></option>
+      <option value="tr">tr</option>
+      <option value="td">td</option>
+      <option value="th">th</option>
+    </select>&gt;
+  </div>
+
+  <div class="code-line">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/<select class="select">
+      <option value=""></option>
+      <option value="tr">tr</option>
+      <option value="td">td</option>
+      <option value="th">th</option>
+    </select>&gt;
+  </div>
+
+  <div class="code-line">
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/<select class="select">
+      <option value=""></option>
+      <option value="thead">thead</option>
+      <option value="tfoot">tfoot</option>
+      <option value="tbody">tbody</option>
+      <option value="row">row</option>
+    </select>&gt;
+  </div>
+
+  <div class="code-line">
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;<select class="select">
+      <option value=""></option>
+      <option value="thead">thead</option>
+      <option value="tfoot">tfoot</option>
+      <option value="tbody">tbody</option>
+      <option value="row">row</option>
+    </select>&gt;
+  </div>
+
+  <div class="code-line">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<select class="select">
+      <option value=""></option>
+      <option value="tr">tr</option>
+      <option value="td">td</option>
+      <option value="th">th</option>
+    </select>&gt;
+  </div>
+
+  <div class="code-line">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<select class="select">
+      <option value=""></option>
+      <option value="tr">tr</option>
+      <option value="td">td</option>
+      <option value="th">th</option>
+    </select>&gt;Row 1, Cell 1&lt;/<select class="select">
+      <option value=""></option>
+      <option value="tr">tr</option>
+      <option value="td">td</option>
+      <option value="th">th</option>
+    </select>&gt;
+  </div>
+
+  <div class="code-line">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<select class="select">
+      <option value=""></option>
+      <option value="tr">tr</option>
+      <option value="td">td</option>
+      <option value="th">th</option>
+    </select>&gt;Row 1, Cell 2&lt;/<select class="select">
+      <option value=""></option>
+      <option value="tr">tr</option>
+      <option value="td">td</option>
+      <option value="th">th</option>
+    </select>&gt;
+  </div>
+
+  <div class="code-line">
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/<select class="select">
+      <option value=""></option>
+      <option value="tr">tr</option>
+      <option value="td">td</option>
+      <option value="th">th</option>
+    </select>&gt;
+  </div>
+
+  <div class="code-line">
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/<select class="select">
+      <option value=""></option>
+      <option value="thead">thead</option>
+      <option value="tfoot">tfoot</option>
+      <option value="tbody">tbody</option>
+      <option value="row">row</option>
+    </select>&gt;
+  </div>
+
+  <div class="code-line">
+    &lt;/<select class="select">
+      <option value=""></option>
+      <option value="div">div</option>
+      <option value="tbody">tbody</option>
+      <option value="table">table</option>
+      <option value="tbody">body</option>
+    </select>&gt;
+  </div>
+</div>
+<div class="buttons">
+  <button id="prevBtn">Prev</button>
+  <button id="nextBtn">Next</button>
+</div>
+</body>
+</html>

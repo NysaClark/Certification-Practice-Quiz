@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yes or No Form</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+
+    
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        padding: 20px;
+      }
+
+      .question {
+        font-size: 18px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      h2 {
+        text-align: center;
+        margin: 0.4rem;
+      }
+
+      #qheader {
+        text-align: start;
+      }
+
+      .form-table {
+        width: 70%;
+        margin: 0 auto;
+        display: grid;
+        background-color: #333;
+        color: #f8f8f2;
+        padding: 20px;
+        border-radius: 8px;
+        grid-template-columns: 3fr 1fr 1fr;
+        gap: 25px;
+        align-items: center;
+      }
+
+      .form-table .header-text {
+        grid-row: span 3;
+      }
+
+      .question-text {
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="question">
+      <p>
+        For each of the statement select Yes if statement is true otherwise No
+      </p>
+    </div>
+    <div class="form-table">
+      <h2 id="qheader">Questions</h2>
+      <h2>Yes</h2>
+      <h2>No</h2>
+
+      <!-- Question 1 -->
+      <div class="question-text">
+        1. A relative link requires that you use a protocol and server path:
+      </div>
+      <input type="radio" name="q1" value="yes" />
+      <input type="radio" name="q1" value="no" />
+
+      <!-- Question 2 -->
+      <div class="question-text">
+        2. When you link to a document in a subdirectory of the current webpage
+        by specifying only the subdirectory name and the filename:
+      </div>
+      <input type="radio" name="q2" value="yes" />
+      <input type="radio" name="q2" value="no" />
+
+      <!-- Question 3 -->
+      <div class="question-text">
+        3. You can use a relative link to reference an image file from a
+        repository on a different server:
+      </div>
+      <input type="radio" name="q3" value="yes" />
+      <input type="radio" name="q3" value="no" />
+
+      <!-- Question 4 -->
+      <div class="question-text">
+        4. The following is an example of how you format an absolute link:
+        https://www.contoso.com/product.html:
+      </div>
+      <input type="radio" name="q4" value="yes" />
+      <input type="radio" name="q4" value="no" />
+    </div>
+    <div class="buttons">
+      <button id="prevBtn">Prev</button>
+      <button id="nextBtn">Next</button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML Head Elements Dropdown</title>
+<script src="script.js" defer></script>
+<link rel="stylesheet" href="style.css">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    background-color: #f4f4f4;
+  }
+
+  .question {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .code-snippet {
+    background-color: #333;
+    color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    width: fit-content;
+  }
+
+  .code-line {
+    display: flex;
+    align-items: center;
+  }
+
+  .tag-select, .attribute-input {
+    margin: 0 10px;
+    padding: 5px;
+    font-size: 16px;
+    background-color: #222;
+    color: #f4f4f4;
+    border: 1px solid #555;
+    border-radius: 4px;
+  }
+
+  .tag-select option {
+    background-color: #333;
+    color: #f4f4f4;
+  }
+</style>
+</head>
+<body>
+
+<div class="question">
+  Complete the <code>&lt;head&gt;</code> section by selecting the appropriate HTML elements.
+</div>
+
+<div class="code-snippet">
+  <div class="code-line">
+    &lt;head&gt;
+  </div>
+
+  <div class="code-line">
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;<select class="tag-select">
+      <option value></option>
+      <option value="style">style</option>
+      <option value="title">title</option>
+      <option value="link">link</option>
+      <option value="script">script</option>
+      <option value="meta">meta</option>
+    </select>&gt;
+    My Web Page
+    &lt;/<select class="tag-select">
+      <option value></option>
+      <option value="style">style</option>
+      <option value="title">title</option>
+      <option value="link">link</option>
+      <option value="script">script</option>
+      <option value="meta">meta</option>
+    </select>&gt;
+  </div>
+
+  <div class="code-line">
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;<select class="tag-select">
+      <option value></option>
+      <option value="style">style</option>
+      <option value="title">title</option>
+      <option value="link">link</option>
+      <option value="script">script</option>
+      <option value="meta">meta</option>
+    </select> charset="UTF-8"&gt;
+  </div>
+
+  <div class="code-line">
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;<select class="tag-select">
+      <option value></option>
+      <option value="style">style</option>
+      <option value="title">title</option>
+      <option value="link">link</option>
+      <option value="script">script</option>
+      <option value="meta">meta</option>
+    </select> rel="stylesheet" href="styles.css"
+    &gt;
+  </div>
+
+  <div class="code-line">
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;<select class="tag-select">
+      <option value></option>
+      <option value="style">style</option>
+      <option value="title">title</option>
+      <option value="link">link</option>
+      <option value="script">script</option>
+      <option value="meta">meta</option>
+    </select> src="script.js"&gt;&lt;/
+    <select class="tag-select">
+      <option value></option>
+      <option value="style">style</option>
+      <option value="title">title</option>
+      <option value="link">link</option>
+      <option value="script">script</option>
+      <option value="meta">meta</option>
+    </select>&gt;
+  </div>
+
+  <div class="code-line">
+    &lt;/head&gt;
+  </div>
+</div>
+
+<div class="buttons">
+  <button id="prevBtn">Prev</button>
+  <button id="nextBtn">Next</button>
+</div>
+
+</body>
+</html>

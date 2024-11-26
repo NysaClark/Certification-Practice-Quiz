@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Media Queries and Viewport Example</title>
+<script src="script.js" defer></script>
+<link rel="stylesheet" href="style.css">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+  }
+
+  .question {
+    font-size: 18px;
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  .code-snippet {
+    background-color: #333;
+    color: #f4f4f4;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    width: 50%;
+  }
+
+  .code-line {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+
+  .select {
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 16px;
+    background-color: #222;
+    color: #f4f4f4;
+    border: 1px solid #555;
+    border-radius: 4px;
+  }
+
+  .select option {
+    background-color: #333;
+    color: #f4f4f4;
+  }
+
+  /* Base styles */
+  .container {
+    width: 80%;
+    padding: 20px;
+    background-color: #eee;
+    text-align: center;
+    margin-top: 20px;
+  }
+</style>
+</head>
+
+<body>
+
+<div class="question">
+  Complete the media query settings to create responsive design.
+</div>
+
+<div class="code-snippet">
+  <div class="code-line">
+    &lt;meta name="viewport" content="width=
+    <select class="select">
+      <option value="device-width">device-width</option>
+      <option value="1024">1024</option>
+      <option value="1440">1440</option>
+    </select>, initial-scale=
+    <select class="select">
+      <option value="1">1</option>
+      <option value="1.5">1.5</option>
+      <option value="2">2</option>
+    </select>"&gt;
+  </div>
+</div>
+<div class="code-snippet">
+  <div class="code-line">
+    /* Media Queries */
+  </div>
+
+  <div class="code-line">
+    <br>
+    /* Extra small devices (phones)*/
+  </div>
+  <div class="code-line">
+    @media (<select class="select">
+      <option value=""></option>
+      <option value="min">min</option>
+      <option value="max">max</option>
+    </select>-width: <select class="select">
+      <option value=""></option>
+      <option value="380px">380px</option>
+      <option value="600px">600px</option>
+      <option value="768px">768px</option>
+      <option value="1024px">1024px</option>
+      <option value="1200px">1200px</option>
+      <option value="1440px">1440px</option>
+    </select>) {
+  </div>
+  <div class="code-line">
+    &nbsp;&nbsp;&nbsp;&nbsp;.container {
+  <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: #ffcccc;
+  <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-size: 20px;
+  <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;padding: 30px;
+  <br>&nbsp;&nbsp;&nbsp;&nbsp;}
+<br>}</div>
+
+
+  <div class="code-line">
+    <br>
+    /* Small devices (portrait tablets, large phones)*/
+  </div>
+  <div class="code-line">
+    @media (<select class="select">
+      <option value=""></option>
+      <option value="min">min</option>
+      <option value="max">max</option>
+    </select>-width: <select class="select">
+      <option value=""></option>
+      <option value="380px">380px</option>
+      <option value="600px">600px</option>
+      <option value="768px">768px</option>
+      <option value="1024px">1024px</option>
+      <option value="1200px">1200px</option>
+      <option value="1440px">1440px</option>
+    </select>) {
+  </div>
+  <div class="code-line">
+    &nbsp;&nbsp;&nbsp;&nbsp;.container {
+  <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-size: 18px;
+  <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;padding: 15px;
+  <br>&nbsp;&nbsp;&nbsp;&nbsp;}
+<br>}</div>
+
+
+<div class="code-line">
+  <br>
+  /* Medium devices (landscape tablets)*/
+</div>
+<div class="code-line">
+  @media (<select class="select">
+    <option value=""></option>
+    <option value="min">min</option>
+    <option value="max">max</option>
+  </select>-width: <select class="select">
+    <option value=""></option>
+      <option value="380px">380px</option>
+      <option value="600px">600px</option>
+      <option value="768px">768px</option>
+      <option value="1024px">1024px</option>
+      <option value="1200px">1200px</option>
+      <option value="1440px">1440px</option>
+  </select>) {
+</div>
+<div class="code-line">
+  &nbsp;&nbsp;&nbsp;&nbsp;.container {
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: #cce7ff;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;}
+<br>}</div>
+
+<div class="code-line">
+  <br>
+  /* Large devices (laptops & desktops)*/
+</div>
+<div class="code-line">
+  @media (<select class="select">
+    <option value=""></option>
+    <option value="min">min</option>
+    <option value="max">max</option>
+  </select>-width: <select class="select">
+    <option value=""></option>
+      <option value="380px">380px</option>
+      <option value="600px">600px</option>
+      <option value="768px">768px</option>
+      <option value="1024px">1024px</option>
+      <option value="1200px">1200px</option>
+      <option value="1440px">1440px</option>
+  </select>) {
+</div>
+<div class="code-line">
+  &nbsp;&nbsp;&nbsp;&nbsp;.container {
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: #000000;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: white;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-weight: bold;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;}
+<br>}</div>
+
+  </div>
+  </div>
+</div>
+<div class="buttons">
+  <button id="prevBtn">Prev</button>
+  <button id="nextBtn">Next</button>
+</div>
+</body>
+</html>

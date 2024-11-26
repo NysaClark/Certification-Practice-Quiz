@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Script and Noscript Tags Demo</title>
+<script src="script.js" defer></script>
+<link rel="stylesheet" href="style.css">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    background-color: #f4f4f4;
+  }
+
+  .question {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .code-snippet {
+    background-color: #333;
+    color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    width: fit-content;
+  }
+
+  .code-line {
+    margin: 1rem 0;
+  }
+
+  .tag-select {
+    margin: 0 10px;
+    padding: 5px;
+    font-size: 16px;
+    background-color: #222;
+    color: #f4f4f4;
+    border: 1px solid #555;
+    border-radius: 4px;
+  }
+
+  .tag-select option {
+    background-color: #333;
+    color: #f4f4f4;
+  }
+</style>
+</head>
+<body>
+
+<div class="question">
+  Select the correct tags for using JavaScript and providing fallback content when JavaScript is disabled.
+</div>
+
+<div class="code-snippet">
+  <div class="code-line">
+    &lt;<select class="tag-select">
+      <option value=""></option>
+      <option value="script">script</option>
+      <option value="noscript">noscript</option>
+    </select>src="app.js"&gt;&lt;/<select class="tag-select">
+      <option value=""></option>
+      <option value="script">script</option>
+      <option value="noscript">noscript</option>
+    </select>&gt;
+  </div>
+
+  <div class="code-line">
+    &lt;<select class="tag-select">
+      <option value=""></option>
+      <option value="script">script</option>
+      <option value="noscript">noscript</option>
+    </select>&gt;
+    <p>Your browser does not support JavaScript, or JavaScript is disabled.</p>
+    &lt;/<select class="tag-select">
+      <option value=""></option>
+      <option value="script">script</option>
+      <option value="noscript">noscript</option>
+    </select>&gt;
+  </div>
+</div>
+<div class="buttons">
+  <button id="prevBtn">Prev</button>
+  <button id="nextBtn">Next</button>
+</div>
+</body>
+</html>

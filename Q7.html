@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Markup Dropdown</title>
+<script src="script.js" defer></script>
+<link rel="stylesheet" href="style.css">
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    background-color: #f4f4f4;
+  }
+
+  .question {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .code-snippet {
+    background-color: #333;
+    color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    width: fit-content;
+  }
+
+  .code-line {
+    display: flex;
+    align-items: center;
+    margin: .5rem 0;
+  }
+
+  .tag-select {
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 16px;
+    background-color: #222;
+    color: #f4f4f4;
+    border: 1px solid #555;
+    border-radius: 4px;
+  }
+
+  .tag-select option {
+    background-color: #333;
+    color: #f4f4f4;
+  }
+</style>
+</head>
+<body>
+
+<div class="question">
+  <p>You are designing a web page for your company. You want to display an image named `contoso.png` on the page.</p>
+  <p>If the user's internet connection is slow or the user is visually impaired, display the text "Contoso Logo."</p>
+  <p>Complete the markup by selecting the appropriate segments.</p>
+</div>
+
+<div class="code-snippet">
+  <div class="code-line">
+    &lt;<select class="tag-select">
+      <option></option>
+      <option value="div">div</option>
+      <option value="picture">picture</option>
+      <option value="figure">figure</option>
+      <option value="img">img</option>
+    </select>
+  </div>
+
+  <div class="code-line">
+    &nbsp;&nbsp;&nbsp;&nbsp;<select class="tag-select">
+      <option></option>
+      <option value="alt">alt</option>
+      <option value="href">href</option>
+      <option value="src">src</option>
+      <option value="title">title</option>
+    </select>="contoso.png"
+  </div>
+
+  <div class="code-line">
+    &nbsp;&nbsp;&nbsp;&nbsp;<select class="tag-select">
+      <option></option>
+      <option value="alt">alt</option>
+      <option value="href">href</option>
+      <option value="src">src</option>
+      <option value="title">title</option>
+
+    </select>="Contoso Logo"
+  </div>
+
+  <div class="code-line">
+    &gt;
+  </div>
+</div>
+<div class="buttons">
+  <button id="prevBtn">Prev</button>
+  <button id="nextBtn">Next</button>
+</div>
+</body>
+</html>

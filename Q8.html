@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Elements Dropdown</title>
+<script src="script.js" defer></script>
+<link rel="stylesheet" href="style.css">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    background-color: #f4f4f4;
+  }
+
+  .question {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .code-snippet {
+    background-color: #333;
+    color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    width: fit-content;
+  }
+
+  .code-line {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+  }
+  
+  .no-flex{
+    display: block;
+    margin: 5px;
+  }
+
+  .tag-select, .attribute-select, .attribute-input {
+    margin: 0 10px;
+    padding: 5px;
+    font-size: 16px;
+    background-color: #222;
+    color: #f4f4f4;
+    border: 1px solid #555;
+    border-radius: 4px;
+  }
+
+  .tag-select option, .attribute-select option {
+    background-color: #333;
+    color: #f4f4f4;
+  }
+</style>
+</head>
+<body>
+
+<div class="question">
+  Complete the form structure by selecting the correct input types and elements.
+</div>
+
+<div class="code-snippet">
+  <div class="code-line">
+    &lt;form&gt;
+  </div>
+
+  <div class="code-line">
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="
+    <select class="attribute-select">
+      <option></option>
+      <option value="password">password</option>
+      <option value="email">email</option>
+      <option value="text">text</option>
+      <option value="radio">radio</option>
+      <option value="checkbox">checkbox</option>
+    </select>" name="username" placeholder="Username" /&gt;
+  </div>
+
+  <div class="code-line">
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="
+    <select class="attribute-select">
+      <option></option>
+      <option value="password">password</option>
+      <option value="email">email</option>
+      <option value="text">text</option>
+      <option value="radio">radio</option>
+      <option value="checkbox">checkbox</option>
+    </select>" name="email" placeholder="Email" /&gt;
+  </div>
+
+  <div class="code-line">
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="
+    <select class="attribute-select">
+      <option></option>
+      <option value="password">password</option>
+      <option value="email">email</option>
+      <option value="text">text</option>
+      <option value="radio">radio</option>
+      <option value="checkbox">checkbox</option>
+    </select>" name="password" placeholder="Password" /&gt;
+  </div>
+
+  <div class="code-line">
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="
+    <select class="attribute-select">
+      <option></option>
+      <option value="password">password</option>
+      <option value="email">email</option>
+      <option value="text">text</option>
+      <option value="radio">radio</option>
+      <option value="checkbox">checkbox</option>
+    </select>" name="terms" /&gt; Accept Terms and Conditions
+  </div>
+
+  <div class="code-line">
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="<select class="attribute-select">
+      <option></option>
+      <option value="password">password</option>
+      <option value="email">email</option>
+      <option value="text">text</option>
+      <option value="radio">radio</option>
+      <option value="checkbox">checkbox</option>
+    </select>" name="gender" value="male" /&gt; Male
+  </div>
+
+  <div class="code-line">
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="<select class="attribute-select">
+      <option></option>
+      <option value="password">password</option>
+      <option value="email">email</option>
+      <option value="text">text</option>
+      <option value="radio">radio</option>
+      <option value="checkbox">checkbox</option>
+    </select>" name="gender" value="female" /&gt; Female
+  </div>
+
+  <div class="no-flex">
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;<select class="attribute-select">
+      <option></option>
+      <option value="input">input</option>
+      <option value="select">select</option>
+      <option value="textarea">textarea</option>
+      <option value="option">option</option>
+      <option value="button">button</option>
+    </select> name="country"&gt;</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="us"&gt;United States&lt;/option&gt;</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="ca"&gt;Canada&lt;/option&gt;</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/<select class="attribute-select">
+      <option></option>
+      <option value="input">input</option>
+      <option value="select">select</option>
+      <option value="textarea">textarea</option>
+      <option value="option">option</option>
+      <option value="button">button</option>
+    </select>&gt;</p>
+  </div>
+
+  <div class="code-line">
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;<select class="attribute-select">
+      <option></option>
+      <option value="input">input</option>
+      <option value="select">select</option>
+      <option value="textarea">textarea</option>
+      <option value="option">option</option>
+      <option value="button">button</option>
+    </select> name="comments"&gt;
+    Write Here!
+    &lt;/<select class="attribute-select">
+      <option></option>
+      <option value="input">input</option>
+      <option value="select">select</option>
+      <option value="textarea">textarea</option>
+      <option value="option">option</option>
+      <option value="button">button</option>
+    </select>&gt;
+  </div>
+
+  <div class="code-line">
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;<select class="attribute-select">
+      <option></option>
+      <option value="input">input</option>
+      <option value="select">select</option>
+      <option value="textarea">textarea</option>
+      <option value="option">option</option>
+      <option value="button">button</option>
+    </select> type="submit"&gt;Submit&lt;/<select class="attribute-select">
+      <option></option>
+      <option value="input">input</option>
+      <option value="select">select</option>
+      <option value="textarea">textarea</option>
+      <option value="option">option</option>
+      <option value="button">button</option>
+    </select>&gt;
+  </div>
+
+  <div class="code-line">
+    &lt;/form&gt;
+  </div>
+</div>
+<div class="buttons">
+  <button id="prevBtn">Prev</button>
+  <button id="nextBtn">Next</button>
+</div>
+</body>
+</html>
