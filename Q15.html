@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Articles</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+        background-color: #f4f4f4;
+      }
+
+      .question {
+        font-size: 18px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      ul li{
+        list-style-type: none;
+      }
+
+      .code-snippet {
+        background-color: #333;
+        color: #f4f4f4;
+        padding: 20px;
+        border-radius: 8px;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 18px;
+        width: fit-content;
+      }
+
+      .code-line {
+        display: flex;
+        align-items: center;
+        margin: 0.5rem 0;
+      }
+
+      .tag-select {
+        margin: 0 10px;
+        padding: 5px;
+        font-size: 16px;
+        background-color: #222;
+        color: #f4f4f4;
+        border: 1px solid #555;
+        border-radius: 4px;
+      }
+
+      .tag-select option {
+        background-color: #333;
+        color: #f4f4f4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="question">
+      <p>
+        You are creating an HTML document that displays a list of news articles.
+        The list has the following requirements:
+      </p>
+      <ul>
+        <li>Each article must be its own semantic block.</li>
+        <li>Each article must have a headline.</li>
+        <li>Each article must have a section that contains its content.</li>
+      </ul>
+      <p>
+        For browsers that support the feature, the content must be hidden until
+        the user clicks to reveal it. The following shows how the article
+        displays when the article content is hidden:
+      </p>
+      <img src="./images/ArticleHeadline.PNG" alt="">
+
+      <p>The following shows how the article displays when the article content is displayed:</p>
+      <img src="./images/ArticleHeadlineDisplay.PNG" alt="">
+
+      <p>You need to create the markup for an article. How should you complete the markup? To answer, select the appropriate markup segments in the answer area.</p>
+    </div>
+
+    <div class="code-snippet">
+      <div class="code-line">
+        &lt;<select class="tag-select">
+          <option></option>
+          <option value="article">article</option>
+          <option value="details">details</option>
+          <option value="summary">summary</option>
+        </select> &gt;
+      </div>
+
+      <div class="code-line">
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<select class="tag-select">
+          <option></option>
+          <option value="article">article</option>
+          <option value="details">details</option>
+          <option value="summary">summary</option>
+        </select> &gt;
+      </div>
+
+      <div class="code-line">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<select class="tag-select">
+          <option></option>
+          <option value="article">article</option>
+          <option value="details">details</option>
+          <option value="summary">summary</option>
+        </select> &gt;
+      </div>
+
+      <div class="code-line">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Article Header
+      </div>
+
+      <div class="code-line">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/<select class="tag-select">
+          <option></option>
+          <option value="article">article</option>
+          <option value="details">details</option>
+          <option value="summary">summary</option>
+        </select> &gt;
+      </div>
+
+      <div class="code-line">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt; This is the article content. &lt;/p&gt;
+      </div>
+
+      <div class="code-line">
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/<select class="tag-select">
+          <option></option>
+          <option value="article">article</option>
+          <option value="details">details</option>
+          <option value="summary">summary</option>
+        </select> &gt;
+      </div>
+
+      <div class="code-line">
+        &lt;/<select class="tag-select">
+          <option></option>
+          <option value="article">article</option>
+          <option value="details">details</option>
+          <option value="summary">summary</option>
+        </select> &gt;
+      </div>
+    </div>
+    <div class="buttons">
+      <button id="prevBtn">Prev</button>
+      <button id="nextBtn">Next</button>
+    </div>
+  </body>
+</html>

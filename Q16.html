@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS Drag and Drop</title>
+    <title>Styling A Tags</title>
     <script src="script.js" defer></script>
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -22,8 +22,9 @@
 
       .question {
         font-size: 18px;
-        margin: 20px 0;
+        margin: 20px auto;
         text-align: center;
+        max-width: 70%;
       }
 
       .container {
@@ -110,32 +111,34 @@
   <body>
     <div class="question">
       <p>
-        Drag the items from the bottom and drop them next to the appropriate
-        item.
+        You want to complete the pseudo class for link elements so that the
+        links appear red when the page loads, green when the link is clicked,
+        orange when the cursor moves over the link, and blue if the link was
+        clicked previously. How should you complete the code?
       </p>
-      <p>Each selector may be used once, more than once, or not at all.</p>
+      <p>
+        To answer, drag the appropriate CSS selector to the correct locations.
+        Each selector may be used once, more than once, or not at all.
+      </p>
     </div>
     <div class="container">
       <div class="drop-container">
-        <div class="drop-zone" id="font-family">
-          <div class="text">font-family</div>
+        <div class="drop-zone" id="red">
           <div class="drop-box"></div>
+          <div class="text">{color: red}</div>
+          
         </div>
-        <div class="drop-zone" id=".container">
-          <div class="text">.container</div>
+        <div class="drop-zone" id="blue">
           <div class="drop-box"></div>
+          <div class="text">{color: blue}</div>
         </div>
-        <div class="drop-zone" id="1.8em">
-          <div class="text">1.8em</div>
+        <div class="drop-zone" id="orange">
           <div class="drop-box"></div>
+          <div class="text">{color: orange}</div>
         </div>
-        <div class="drop-zone" id="#para1">
-          <div class="text">#param1</div>
+        <div class="drop-zone" id="green">
           <div class="drop-box"></div>
-        </div>
-        <div class="drop-zone" id="mouse-up">
-          <div class="text">mouse-up</div>
-          <div class="drop-box"></div>
+          <div class="text">{color: green}</div>
         </div>
       </div>
 
@@ -143,11 +146,10 @@
       <br />
       <!-- <h2>Drag items</h2> -->
       <div class="drag-container">
-        <div class="draggable" draggable="true" id="event">event</div>
-        <div class="draggable" draggable="true" id="value">value</div>
-        <div class="draggable" draggable="true" id="property">property</div>
-        <div class="draggable" draggable="true" id="id">id</div>
-        <div class="draggable" draggable="true" id="class">class</div>
+        <div class="draggable" draggable="true" id="a:active">a:active</div>
+        <div class="draggable" draggable="true" id="a:visited">a:visited</div>
+        <div class="draggable" draggable="true" id="a:link">a:link</div>
+        <div class="draggable" draggable="true" id="a:hover">a:hover</div>
       </div>
     </div>
 

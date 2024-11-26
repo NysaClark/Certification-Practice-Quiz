@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Applying Stylesheets</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        padding: 20px;
+      }
+
+      .container {
+        width: 60%;
+        margin: 0 auto;
+      }
+
+      .question {
+        font-size: 18px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .code-snippet {
+        background-color: #333;
+        color: #f8f8f2;
+        padding: 10px;
+        border-radius: 8px;
+        font-family: "Courier New", Courier, monospace;
+        width: fit-content;
+        margin: 20px auto 0;
+        text-align: start;
+      }
+
+      .code-line {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 8px;
+      }
+
+      select {
+        padding: 5px;
+        margin: 0 auto 10px;
+        width: fit-content;
+        font-size: 16px;
+      }
+
+      label {
+        font-weight: bold;
+      }
+
+      .dropdown {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="question">
+        <p>
+          You are designing a website for City Power & Light. You write the
+          following markup. Line numbers are included for reference only.
+        </p>
+
+        <img src="./images/Q17Markup.PNG" alt="">
+
+        <p>What style will be used to render the code?</p>
+      </div>
+
+      <div class="dropdown">
+        <select>
+          <option value=""></option>
+          <option value="option1">
+            The browser default style will be used.
+          </option>
+          <option value="option2">
+            An inline style will be used.
+          </option>
+          <option value="option3">
+            An international style will be used.
+          </option>
+          <option value="option4">
+            An external style will be used.
+          </option>
+        </select>
+      </div>
+    </div>
+    <div class="buttons">
+      <button id="prevBtn">Prev</button>
+      <button id="nextBtn">Next</button>
+    </div>
+  </body>
+</html>

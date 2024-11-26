@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS Drag and Drop</title>
+    <title>CSS Complete the Code</title>
     <script src="script.js" defer></script>
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -22,8 +22,9 @@
 
       .question {
         font-size: 18px;
-        margin: 20px 0;
+        margin: 20px auto;
         text-align: center;
+        max-width: 70%;
       }
 
       .container {
@@ -38,6 +39,12 @@
         width: fit-content;
         height: 100px;
         margin: 0 auto;
+      }
+
+      .drop-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
 
       .draggable-items {
@@ -110,44 +117,57 @@
   <body>
     <div class="question">
       <p>
-        Drag the items from the bottom and drop them next to the appropriate
-        item.
+        You are designing a website for Margie"™s Travel. The website uses
+        external stylesheets. You need to create a style that centers all h1
+        elements on the page. How should you complete the code?
       </p>
-      <p>Each selector may be used once, more than once, or not at all.</p>
+
+      <p>
+        To answer, drag the appropriate code segment to the correct location in
+        the code. Each code segment may be used once, more than once or not at
+        all. You may need to drag the split bar between panes or scroll to view
+        content.
+      </p>
+      <p>
+        To answer, drag the appropriate CSS selector to the correct locations.
+        Each selector may be used once, more than once, or not at all.
+      </p>
     </div>
     <div class="container">
       <div class="drop-container">
-        <div class="drop-zone" id="font-family">
-          <div class="text">font-family</div>
+        <div class="drop-zone" id="box1">
           <div class="drop-box"></div>
-        </div>
-        <div class="drop-zone" id=".container">
-          <div class="text">.container</div>
+          
+        </div>{
+        <div class="drop-zone" id="box2">
           <div class="drop-box"></div>
+         
         </div>
-        <div class="drop-zone" id="1.8em">
-          <div class="text">1.8em</div>
+        <div class="drop-zone" id="box3">
           <div class="drop-box"></div>
+          
         </div>
-        <div class="drop-zone" id="#para1">
-          <div class="text">#param1</div>
+        <div class="drop-zone" id="box4">
           <div class="drop-box"></div>
+        
         </div>
-        <div class="drop-zone" id="mouse-up">
-          <div class="text">mouse-up</div>
+        <div class="drop-zone" id="box5">
           <div class="drop-box"></div>
-        </div>
+        
+        </div>}
       </div>
 
       <br />
       <br />
       <!-- <h2>Drag items</h2> -->
       <div class="drag-container">
-        <div class="draggable" draggable="true" id="event">event</div>
-        <div class="draggable" draggable="true" id="value">value</div>
-        <div class="draggable" draggable="true" id="property">property</div>
-        <div class="draggable" draggable="true" id="id">id</div>
-        <div class="draggable" draggable="true" id="class">class</div>
+        <div class="draggable" draggable="true" id="text-align">text-align</div>
+        <div class="draggable" draggable="true" id="center">center</div>
+        <div class="draggable" draggable="true" id="h1">h1</div>
+        <div class="draggable" draggable="true" id="equalSign">=</div>
+        <div class="draggable" draggable="true" id="colon">:</div>
+        <div class="draggable" draggable="true" id="semicolon">;</div>
+        <div class="draggable" draggable="true" id="classh1">.h1</div>
       </div>
     </div>
 

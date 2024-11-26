@@ -26,7 +26,7 @@ nextBtn.addEventListener("click", nextQuestion)
 if(currQuestionNum == 1){
   prevBtn.setAttribute("disabled", true);
 }else // Disable next button for last question
-if(currQuestionNum == 14){ 
+if(currQuestionNum == 22){ 
   nextBtn.setAttribute("disabled", true);
 }
 

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Yes or No</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        padding: 20px;
+      }
+
+      .question {
+        font-size: 18px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      h2 {
+        text-align: center;
+        margin: 0.4rem;
+      }
+
+      #qheader {
+        text-align: start;
+      }
+
+      .form-table {
+        width: 70%;
+        margin: 0 auto;
+        display: grid;
+        background-color: #333;
+        color: #f8f8f2;
+        padding: 20px;
+        border-radius: 8px;
+        grid-template-columns: 3fr 1fr 1fr;
+        gap: 25px;
+        align-items: center;
+      }
+
+      .form-table .header-text {
+        grid-row: span 3;
+      }
+
+      .question-text {
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="question">
+      <p>
+        For each of the following statements, select Yes if the statement is true. Otherwise, select No.
+      </p>
+    </div>
+    <div class="form-table">
+      <h2 id="qheader">Answer Area</h2>
+      <h2>Yes</h2>
+      <h2>No</h2>
+
+      <!-- Question 1 -->
+      <div class="question-text">
+      A CSS comment starts with /* and ends with */.
+      </div>
+      <input type="radio" name="q1" value="yes" />
+      <input type="radio" name="q1" value="no" />
+
+      <!-- Question 2 -->
+      <div class="question-text">
+      Percent and EM are relative measurements and the size of each depends on its parent.
+      </div>
+      <input type="radio" name="q2" value="yes" />
+      <input type="radio" name="q2" value="no" />
+
+      <!-- Question 3 -->
+      <div class="question-text">
+        Pixels are recommended units for specifying size.
+      </div>
+      <input type="radio" name="q3" value="yes" />
+      <input type="radio" name="q3" value="no" />
+
+      <!-- Question 4 -->
+      <div class="question-text">
+       The font-family attribute helps ensure maximum compatibility between web developers.
+      </div>
+      <input type="radio" name="q4" value="yes" />
+      <input type="radio" name="q4" value="no" />
+    </div>
+    <div class="buttons">
+      <button id="prevBtn">Prev</button>
+      <button id="nextBtn">Next</button>
+    </div>
+  </body>
+</html>
